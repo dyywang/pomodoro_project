@@ -61,7 +61,7 @@ function Pomodoro() {
   const [session, setSession] = useState(null);
 
   // ToDo: Allow the user to adjust the focus and break duration.
-  const initialDuration = {focus:2, break:1}
+  const initialDuration = {focus:25, break:5}
   const [durations, setDurations] = useState(initialDuration);
   
 
