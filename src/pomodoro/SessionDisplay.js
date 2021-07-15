@@ -26,7 +26,7 @@ function SessionDisplay ( {session, durations, formatTime}) {
           aria-valuemin="0"
           aria-valuemax="100"
           aria-valuenow={(100 * (1 - (session.timeRemaining / (sessionDuration * 60) ))) } // TODO: Increase aria-valuenow as elapsed time increases
-          style={{ width: (100 * (1 - (session.timeRemaining / (sessionDuration * 60) ))) }} // TODO: Increase width % as elapsed time increases
+          style={{ width: (100 * (1 - (session.timeRemaining / (sessionDuration * 60) ))) + "%" }} // TODO: Increase width % as elapsed time increases
         />
       </div>
     </div>
